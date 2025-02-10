@@ -1,0 +1,153 @@
+/* App.css */
+
+/* HomePage */
+
+.particals-effect {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+}
+
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: white;
+    text-align: center;
+}
+/* Example of logo size adjustment */
+
+
+/*@keyframes fadeInOut {*/
+/*    0% {opacity: 0;}*/
+/*    20% {opacity: 0;}*/
+/*    80% {opacity: 1;}*/
+/*    100% {opacity: 0;}*/
+/*}*/
+
+.fadeInOut {
+/*    animation-name: fadeInOut;*/
+/*    animation-duration: 5s;*/
+    animation-iteration-count: infinite;
+    color: #E59700;
+    /*text-shadow: #a4a4a4 5px 5px 20px;*/
+    /*background: -webkit-linear-gradient(left, #ee7752, #ff5500, #eeff00, #fff201);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    font-weight: bold;
+}
+
+
+/*      About     */
+.date-list{
+    justify-self: center !important;
+    margin: 20px;
+    margin-inside: 5%;
+    border-radius: 60px;
+    box-shadow: #cecece 5px 5px 20px;
+    padding: 1%;
+    overflow-x: auto;
+}
+
+.date-list:hover {
+    box-shadow: 0 0 20px #ffe492;
+}
+
+.RegBg {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+}
+
+/* History.css */
+.his-text {
+    color: #F5B700;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px !important;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg-shape1, .bg-shape2 {
+    border-radius: 9999px;
+    position: relative;
+}
+
+.bg-shape1 {
+    width: 400px;
+    height: 400px;
+    animation: one 10s infinite;
+}
+
+.bg-shape2 {
+    width: 300px;
+    height: 300px;
+    animation: two 8s infinite;
+}
+
+@keyframes one {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(100px, 70px) rotate(90deg);
+    }
+    50% {
+        transform: translate(20px, 150px) rotate(180deg);
+    }
+    75% {
+        transform: translate(50px, 100px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(50px, 10px) rotate(120deg);
+    }
+    50% {
+        transform: translate(100px, 50px) rotate(240deg);
+    }
+    75% {
+        transform: translate(50px, 100px) rotate(360deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(480deg);
+    }
+}
+
+.opacity-c {
+    opacity: .35;
+}
+
+.bg-blur {
+    filter: blur(90px);
+}
+
+.bg-1 {
+    background-color: rgba(255, 208, 0, 0.64) !important;
+}
+
+.bg-2 {
+    background-color: rgb(255, 134, 62) !important;
+}
+
+.bg-3 {
+    background-color: rgba(255, 248, 0, 0.78) !important;
+}

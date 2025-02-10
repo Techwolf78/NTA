@@ -1,0 +1,79 @@
+/* Banner.css */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 10px;
+    height: 150px;
+    position: relative; 
+    z-index: 10; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.banner-images-left,
+.banner-images-right {
+    display: flex;
+    gap: 20px; 
+    width: full;
+
+}
+
+.banner-image {
+    max-width: 120px; 
+    max-height: 150px; 
+    object-fit: fill; 
+    margin: 10px;
+}
+.banner-image1 {
+    max-width: 250px; 
+    max-height: 200px; 
+    object-fit: fill; 
+    margin: 10px;
+}
+
+
+.banner-text {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.banner-text h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+    z-index: 11;
+}
+
+.banner-text h3 {
+    font-size: 15px;
+    color: #666;
+    margin-top: 10px;
+    z-index: 11;
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .banner-images-left,
+    .banner-images-right {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .banner-text h2 {
+        font-size: 20px;
+    }
+
+    .banner-text h3 {
+        font-size: 16px;
+    }
+}

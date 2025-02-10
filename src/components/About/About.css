@@ -1,0 +1,369 @@
+.shape1 {
+    position: absolute;
+    top: 29%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation: rotation 10s infinite linear;
+}
+
+.shape2 {
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: rotation 10s infinite linear;
+}
+
+.shape3 {
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: rotation 10s infinite linear;
+}
+
+.shape4 {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation: rotation 10s infinite linear;
+}
+
+.ConferenceTracks{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+.ImportantDates{
+    position: absolute;
+    top: 15%;
+    left: -3%;
+    max-width: 250px;
+}
+
+@keyframes rotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.p-tracks {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+}
+
+.p-text {
+    font-size: 15px;
+    /*color: #434343;*/
+    padding: 10px;
+    color: #725500;
+}
+.shape1, .shape2, .shape3, .shape4 {
+    width: 40vw;
+    height: auto;
+}
+.About {
+    position: relative;
+    overflow: hidden;
+}
+
+.p-text:last-child {
+    border-bottom: none;
+}
+
+
+
+.date-box {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #898989;
+    border:none;
+    font-size: 15px;
+    text-align: center;
+    width:55%;
+    font-weight: bold;
+
+}
+
+.date-box:hover {
+    width: 60%;
+    font-weight: bold;
+    color: #F5B700;
+    box-shadow: 0px 0px 10px 0px #F5B700;
+    transition: all .5s ease;
+}
+
+.v-text{
+    color: #ffb300;
+    font-weight: bold;
+}
+.v-1-text{
+    color: #460000;
+    /*font-weight: bold;*/
+}
+
+.venue-text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.free-conference-container,
+.main-conference-container,
+.post-conference-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.free-conference-details,
+.main-conference-details,
+.post-conference-details {
+    flex: 1;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.free-conference-map,
+.main-conference-map,
+.post-conference-map {
+    flex: 1;
+}
+
+.free-conference-container{
+    font-family: Arial, sans-serif;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 20px 0px rgba(134, 134, 134, 0.43);
+}
+.main-conference-container {
+    font-family: Arial, sans-serif;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 20px 0px rgba(134, 134, 134, 0.43);
+}
+.post-conference-container {
+    font-family: Arial, sans-serif;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    box-shadow: 0px 0px 20px 0px rgba(134, 134, 134, 0.43);
+}
+
+.free-conference-map{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-conference-map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post-conference-map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive-21by9::before {
+    padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+    padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+    padding-top: 100%;
+}
+
+.y-text {
+    color: #F5B700;
+}
+/* General Styles */
+.keynote-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* Title */
+  .keynote-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Speaker Flexbox */
+  .speaker-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .speaker-flex:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Speaker Image - Slightly Lower */
+  .speaker-img-wrapper-down {
+    position: relative;
+    top: 20px; /* Pushes the image slightly down */
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .speaker-img {
+    width: 100%;
+    object-fit:contain;
+    border: 5px solid #ccc;
+  }
+  
+  /* Speaker Information and Description Flex */
+  .speaker-info-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 700px;
+  }
+  
+  /* Speaker Info */
+  .speaker-info {
+    text-align: left;
+  }
+  
+  .speaker-name {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: orangered;
+  }
+  
+  .speaker-title {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .speaker-department {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+  }
+  
+  /* Speaker Description */
+  .speaker-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .speaker-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .speaker-info-flex {
+      align-items: center;
+    }
+  
+    .speaker-description {
+      text-align: left;
+    }
+  }
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem; /* mt-12 equivalent */
+  }
+  
+  .host-institute-image {
+    width: 66.66%; /* w-2/3 equivalent */
+    height: auto;
+    border-radius: 0.75rem; /* rounded-lg equivalent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg equivalent */
+    transition: width 0.3s ease; /* Smooth transition for size change */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .host-institute-image {
+      width: 90%; /* Make the image smaller on smaller screens */
+    }
+  }
+  
+  /* For extra small screens */
+  @media (max-width: 480px) {
+    .host-institute-image {
+      width: 100%; /* Full width for very small screens */
+    }
+  }
+  

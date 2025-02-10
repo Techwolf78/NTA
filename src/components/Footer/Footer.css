@@ -1,0 +1,201 @@
+/* Instagram Color Palette */
+:root {
+    --instagram-light-yellow: #feda75;
+    --instagram-orange: #fa7e1e;
+    --instagram-pink: #d62976;
+    --instagram-purple: #962fbf;
+    --instagram-blue: #4f5bd5;
+    --instagram-royal-blue: #405DE6;
+    --instagram-dark-pink: #C13584;
+    --instagram-purple-red: #E1306C;
+    --instagram-red: #FD1D1D;
+    --instagram-dark-orange: #F56040;
+    --instagram-yellow: #FCAF45;
+    --instagram-light-yellow-alt: #FFDC80;
+}
+
+/* Footer */
+.card-footer {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px -3px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effects for social media icons */
+.icon-footer a:hover {
+    color: inherit !important; /* Reset to normal color */
+}
+
+/* Specific hover colors for the social media links */
+.icon-footer a[href*="facebook.com"]:hover {
+    color: #1877F2 !important; /* Facebook blue */
+}
+
+.icon-footer a[href*="instagram.com"]:hover {
+    color: var(--instagram-pink) !important; /* Instagram pink */
+}
+
+.icon-footer a[href*="linkedin.com"]:hover {
+    color: #0077B5 !important; /* LinkedIn blue */
+}
+
+.icon-footer a[href*="mailto"]:hover {
+    color: #FF6F00 !important; /* A color for mail icon */
+}
+
+.icon-footer a[href*="tel"]:hover {
+    color: #4CAF50 !important; /* A color for phone icon */
+}
+
+.card-footer section {
+    padding: 1rem 0; /* Padding for sections */
+}
+
+.card-footer .icon-footer {
+    font-size: 2rem; /* Increase icon size */
+}
+
+/* For social media icons in the footer */
+.social-icon, .footer-icon {
+    width: 30px; /* Adjust the width of the icons */
+    height: 30px; /* Adjust the height of the icons */
+    margin-right: 10px; /* Add some space between icon and text */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover, .footer-icon:hover {
+    opacity: 0.8; /* Slightly fade the icons on hover */
+}
+
+.card-footer h6 {
+    color: #555; /* Darker text color */
+}
+
+.card-footer img {
+    transition: transform 0.3s ease; /* Smooth transition for images */
+}
+
+.card-footer img:hover {
+    transform: scale(1.1); /* Zoom in on image hover */
+}
+
+.card-footer .text-center p {
+    color: #777; /* Lighter text color */
+}
+
+.card-footer .text-center a {
+    color: #777; /* Lighter link color */
+    transition: color 0.3s ease; /* Transition for link hover */
+}
+
+.card-footer .text-center a:hover {
+    color: #43ccd1; /* Change link color on hover */
+}
+
+.card-footer .text-center p:last-child {
+    margin-bottom: 0; /* Remove bottom margin for last paragraph */
+}
+
+/* Specific Footer Styling */
+.footer-container {
+    margin-top: 40px;
+}
+
+.contact-box {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.contact-box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.footer-logo {
+    max-width: 350px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05); /* Small zoom effect on logo hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 20px;
+}
+
+.footer-bottom a {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 250px;
+    }
+}
+
+/* Add this to the "Useful Links" section */
+.card-footer .d-flex.align-items-center a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust spacing between items */
+}
+
+.card-footer .d-flex.align-items-center a .icon-footer {
+    margin-right: 10px; /* Space between icon and text */
+    width: 24px; /* Fixed width for icons */
+    height: 24px; /* Fixed height for icons */
+    display: inline-block;
+    font-size: 24px; /* Ensure icon size is consistent */
+}
+
+/* Optional: You can adjust the size as per your needs */
+.card-footer .d-flex.align-items-center a .icon-footer {
+    width: 24px; /* Ensures icons are of equal width */
+    height: 24px; /* Ensures icons are of equal height */
+    font-size: 1.5rem; /* Ensure all icons have the same size */
+    color: white; /* Ensure icons are white */
+}
+
+.social-icon {
+    font-size: 2rem; /* Adjust size */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* "Useful Links" Hover Effect - Underline from left */
+.card-footer .d-flex.align-items-center a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card-footer .d-flex.align-items-center a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #43ccd1; /* Change to desired underline color */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.card-footer .d-flex.align-items-center a:hover::before {
+    width: 100%; /* Full width underline on hover */
+}

@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
+
+# Cache files
+node_modules/.cache/
+
+# Build output
+/dist/
+/build/
+
+# npm package lock file
+/package-lock.json
+
+# IDE/editor directories
+.vscode/
+.idea/

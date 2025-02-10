@@ -1,0 +1,73 @@
+.objective-container {
+    background-color: #ffffff; /* Dark background */
+    padding: 2rem 1rem;
+}
+
+.objective-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #43ccd1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.objective-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1.5rem;
+}
+
+.objective-card {
+    background-color: #36a4a4; /* White background */
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    /* Removed border-radius for square corners */
+    border-radius: 0;
+}
+
+.objective-card.hovered {
+    transform: scale(1.05);
+}
+
+.objective-icon {
+    font-size: 3rem; /* Adjust size */
+    color: #1a5052; /* Icon color */
+    margin-bottom: 10px;
+}
+.objective-card {
+    /* Add styling for hover effects */
+    transition: transform 0.3s ease;
+}
+.objective-card.hovered {
+    transform: translateY(-10px);
+}
+
+.objective-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Dark text for better contrast */
+}
+
+.objective-card-description {
+    color: rgb(255, 255, 255); /* Dark description text for readability */
+}
+
+.current-date {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .objective-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .objective-grid {
+        grid-template-columns: repeat(1, 1fr); /* One column */
+    }
+}

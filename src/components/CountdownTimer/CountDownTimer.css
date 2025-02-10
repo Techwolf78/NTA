@@ -1,0 +1,42 @@
+h2 {
+    font-size: 2em;
+    margin: 0;
+    color: #36A4A4; /* Primary color for the numbers */
+}
+
+.cdt-p {
+    font-size: 1em;
+    margin: 0;
+    color: #43CCD1; /* Secondary color for the text "Days", "Hours", etc. */
+}
+
+h2, .cdt-p {
+    text-align: center;
+}
+
+.count-box {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional: Background color for the countdown boxes */
+    border: 2px solid #36A4A4; /* Optional: Border with primary color */
+}
+
+.count-box:hover {
+    background-color: #36A4A4; /* Primary color on hover */
+}
+
+.count-box:hover h2 {
+    color: #ffffff; /* Change number color on hover */
+}
+
+.count-box:hover .cdt-p {
+    color: #ffffff; /* Change text color on hover */
+}

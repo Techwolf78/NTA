@@ -1,0 +1,85 @@
+/* Navbar */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.custom-nav-link {
+    color: #43CCd1; /* Default color for nav links */
+    position: relative;
+    text-align: center;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.custom-nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #43CCd1;
+    transition: width .3s;
+    text-align: center;
+}
+
+.custom-nav-link:hover::after, .custom-nav-link.active::after {
+    width: 100%;
+    text-align: center;
+    color: #43CCd1; /* Active or hover color */
+}
+
+.custom-nav-link:hover {
+    color: #43CCd1; /* Change text color on hover */
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    color: #43CCd1; /* Color on hover for dropdown items */
+    text-align: center;
+}
+
+.navbar .dropdown-toggle::after {
+    display: none; /* Hides the default dropdown arrow */
+}
+
+/* Make sure RouterLink does not have an underline */
+.no-underline {
+    text-decoration: none !important;
+}
+
+/* Ensures no underline on nav links */
+.navbar-nav .nav-link {
+    text-decoration: none !important;
+}
+
+/* Default: Centered on larger screens */
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
+/* When the screen size is smaller (e.g., less than 992px), align text to the left */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        text-align: left;
+        padding-left: 1rem; /* Optional: Adjust left padding if needed */
+    }
+
+    /* Also adjust the dropdown items to align left */
+    .navbar .dropdown-menu {
+        text-align: left;
+    }
+
+    /* Ensure that the dropdown toggle aligns left on smaller screens */
+    .navbar .dropdown-toggle {
+        text-align: left;
+    }
+
+    /* Make the dropdown transparent on smaller screens */
+    .navbar .dropdown-menu {
+        background-color: transparent !important; /* Transparent background on small screens */
+        border: none; /* Optionally remove border */
+    }
+}
+
+/* Default: White background for the dropdown on larger screens */
+.navbar .dropdown-menu {
+    background-color: white !important; /* White background by default */
+}
