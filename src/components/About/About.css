@@ -4,6 +4,7 @@
     left: 0%;
     transform: translate(-50%, -50%);
     animation: rotation 10s infinite linear;
+    z-index: 1; /* Add this line */
 }
 
 .shape2 {
@@ -12,6 +13,7 @@
     left: 100%;
     transform: translate(-50%, -50%);
     animation: rotation 10s infinite linear;
+    z-index: 1; /* Add this line */
 }
 
 .shape3 {
@@ -20,6 +22,7 @@
     left: 100%;
     transform: translate(-50%, -50%);
     animation: rotation 10s infinite linear;
+    z-index: 1; /* Add this line */
 }
 
 .shape4 {
@@ -28,6 +31,7 @@
     left: 0%;
     transform: translate(-50%, -50%);
     animation: rotation 10s infinite linear;
+    z-index: 1; /* Add this line */
 }
 
 .ConferenceTracks{
@@ -248,7 +252,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #333;
+    color: #43ccd1;
     text-align: center;
   }
   
@@ -263,6 +267,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
+    z-index: 2;
   }
   
   .speaker-flex:hover {
@@ -321,6 +326,7 @@
     line-height: 1.8;
     color: #555;
     text-align: justify;
+    z-index: 2;
   }
   
   /* Responsive Design */
@@ -336,6 +342,7 @@
   
     .speaker-description {
       text-align: left;
+      z-index: 2;
     }
   }
   .image-container {
