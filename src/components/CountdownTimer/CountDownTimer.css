@@ -40,3 +40,49 @@ h2, .cdt-p {
 .count-box:hover .cdt-p {
     color: #ffffff; /* Change text color on hover */
 }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .count-box {
+        width: 80px;
+        height: 120px;
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .cdt-p {
+        font-size: 0.9em;
+    }
+    
+    /* Adjust row layout for medium screens */
+    .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .count-box {
+        width: 70px;
+        height: 70px;
+        padding: 2px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .cdt-p {
+        font-size: 0.8em;
+    }
+
+    /* Adjust row layout for small screens */
+    .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
