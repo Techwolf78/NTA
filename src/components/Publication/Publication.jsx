@@ -85,7 +85,7 @@ const Publication = () => {
              <p>
                All submissions will go through a double-blind peer review. Accepted papers will be published in 
                the conference proceedings, indexed by <span className="highlight">Taylor & Francis</span> and 
-               <span className="highlight">Scopus</span>.
+               <span className="highlight"> Scopus</span>.
              </p>
            </div>
 
