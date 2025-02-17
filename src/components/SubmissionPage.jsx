@@ -170,7 +170,7 @@ const SubmissionPage = () => {
                 <li>Max file size: 10 MB</li>
                 <li>Filename: 'LastName_FirstName_Poster.pdf'</li>
                 <li>Contact: research@indiraicem.ac.in</li>
-                <li>Deadline: 28<sup>th</sup> February 2025</li>
+                <li>Deadline: 5<sup>th</sup> March 2025</li>
               </ul>
             </div>
           </div>

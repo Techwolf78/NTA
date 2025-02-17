@@ -73,8 +73,8 @@ const Publication = () => {
 
            <div className="section">
   <h3>Important Dates</h3>
-  <p><span className="important">Submission Deadline:</span> 28<sup>th</sup> February 2025</p>
-  <p><span className="important">Notification of Acceptance:</span> 6<sup>th</sup> March 2025</p>
+  <p><span className="important">Submission Deadline:</span> 5<sup>th</sup> March 2025</p>
+  <p><span className="important">Notification of Acceptance:</span> 10<sup>th</sup> March 2025</p>
   <p><span className="important">Camera-Ready Submission:</span> 15<sup>th</sup> March 2025</p>
   <p><span className="important">Conference Dates:</span> 12<sup>th</sup> & 13<sup>th</sup> April 2025</p>
 </div>

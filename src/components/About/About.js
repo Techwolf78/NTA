@@ -45,7 +45,7 @@ export default function About() {
       <img className="shape2 w-25" src={Shape2} alt="Shape2" />
       <img className="shape3 w-25" src={Shape4} alt="Shape3" />
       <img className="shape4 w-25" src={Shape3} alt="Shape4" />
-      <img className="ConferenceTracks w-25" src={ConferenceTracks} alt="ConferenceTracksImg" />
+      {/* <img className="ConferenceTracks w-25" src={ConferenceTracks} alt="ConferenceTracksImg" /> */}
 
       <section id="ICLVE-2023" className="relative py-24 bg-gray-100">
 

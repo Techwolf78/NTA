@@ -138,11 +138,11 @@ const ListItem = ({ children }) => (
 
 // Data for table
 const feeData = [
-    { category: 'Student Paper', inr: '4,000', usd: '50' },
-    { category: 'Research Scholar Paper', inr: '5,000', usd: '65' },
+    { category: 'Student Paper', inr: '2,000', usd: '50' },
+    { category: 'Paper Registration for Research Scholar and Faculty', inr: '3,000', usd: '65' },
     { category: 'Industry Professional Paper', inr: '6,000', usd: '75' },
-    { category: 'Co-Author Registration', inr: '2,000', usd: '30' },
-    { category: 'Conference Attendee', inr: '2,000', usd: '30' },
+    { category: 'Co-Author Registration', inr: '1,000', usd: '30' },
+    { category: 'Conference Attendee', inr: '1,000', usd: '30' },
     { category: 'Pre-conference Workshop', inr: '600', usd: '15' },
     { category: 'Poster Presentation', inr: '600', usd: '15' },
 ];
